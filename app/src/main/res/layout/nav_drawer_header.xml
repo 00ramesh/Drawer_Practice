@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/avatar_background" >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/header_avatar_image"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name As title"
+        android:textColor="#FAFAFA"
+        android:layout_toEndOf="@id/header_avatar_image"
+        android:layout_alignTop="@id/header_avatar_image"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:id="@+id/avatar_title"/>
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar_title"
+        android:layout_toEndOf="@id/header_avatar_image"
+        android:text="Email of avatar"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

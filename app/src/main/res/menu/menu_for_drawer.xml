@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_01"
+        >
+        <item android:id="@+id/home_activity"
+              android:title="Home"
+              android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/home_work_activity"
+              android:title="Home Work"
+              android:icon="@drawable/ic_home_work"/>
+        <item android:id="@+id/people_activity"
+              android:title="People"
+              android:icon="@drawable/ic_people"/>
+
+    </group>
+    <group android:id="@+id/group_02"
+           android:checkableBehavior="single">
+
+        <item android:id="@+id/subTiles"
+              android:title="Subtitle">
+            <menu>
+                  <item android:id="@+id/settings"
+                        android:title="Settings"
+                        android:icon="@drawable/ic_settings"/>
+                  <item android:id="@+id/log_out"
+                        android:title="Logout"
+                        />
+
+            </menu>
+        </item>
+
+    </group>
+</menu>
